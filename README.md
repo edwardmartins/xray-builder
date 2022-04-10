@@ -1,7 +1,7 @@
 # xray-builder
 Script that given a set of funds and their percentages makes you an Xray or integration of your portfolio
 
-## Requierements
+## Requirements
 1. Should have Python installed
 2. All dependencies of the project must be satisfied, you can install them with `pip install <library>`
 ## Example of srcipt execution
