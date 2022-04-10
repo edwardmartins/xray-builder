@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import urllib.parse, os, requests, sys
 
 from pathlib import Path
