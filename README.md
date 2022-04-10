@@ -1,5 +1,5 @@
 # xray-builder
-Script that given a set of funds and their percentages makes you an Xray or integration of your portfolio
+Script that given a set of funds and their percentages makes an Xray or integration of a portfolio
 
 ## Requirements
 1. Should have Python installed
