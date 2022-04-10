@@ -16,7 +16,7 @@ wait_time = 30
 # Starts morningstar driver and configre the page for getting the data correct
 def start_driver_morningstar():
     chrome_options = Options()
-    # chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--headless")
     chrome_options.add_argument('--log-level=3')
     driver = webdriver.Chrome(ChromeDriverManager().install(),options=chrome_options)
 
