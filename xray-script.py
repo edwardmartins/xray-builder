@@ -15,7 +15,7 @@ wait_time = 30
 # Starts morningstar driver and configre the page for getting the data correct
 def start_driver_morningstar():
     chrome_options = Options()
-    chrome_options.add_argument("--headless")
+    #chrome_options.add_argument("--headless")
     chrome_options.add_argument('--log-level=3')
     driver = webdriver.Chrome(ChromeDriverManager().install(),options=chrome_options)
 
@@ -116,6 +116,7 @@ def save_pdf(url):
 
 if __name__ == "__main__":
     # call the driver
+    print("GETTING FUND IDs...")
     driver = start_driver_morningstar()
 
     # made two arrays for IDs and percentages
@@ -130,7 +131,10 @@ if __name__ == "__main__":
         morningstar_ids.append(id)
    
     driver.close()
+    driver.quit()
+
     # save and open the x-ray
+    print("GENERATING PDF...")
     url = call_pdf_url(morningstar_ids,percentages)
     save_pdf(url)
     os.system('xray.pdf')
